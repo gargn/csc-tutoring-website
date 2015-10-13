@@ -1,0 +1,143 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+   padding-top: 250px;
+   background-color: white;
+   margin: 0;
+}
+
+.left {
+   top: 15px;
+   position: relative;
+   display: inline-block;
+}
+
+.center {
+   display: inline-block;
+   position: relative;
+   padding-right: 25px;
+   padding-left: 25px;
+   vertical-align: middle;
+}
+
+.right {
+   top: 15px;
+   position: relative;
+   display: inline-block;
+}
+
+#head-photo {
+   height: 125px;
+   width: auto;
+   margin: 0;
+}
+
+.main-wrapper {
+   background-color: white;
+   width: 100%;
+   height: 100%;
+   margin: 0px auto 0px auto;
+}
+
+@media screen and (min-width: 1200px) { 
+   .main-wrapper {
+      box-shadow: 0px 0px 8px rgba(0,0,0,0.3);
+   }
+}
+
+header {
+   text-align: center;
+   padding-top: 25px;
+   height: 300px;
+   background: #E74C3C;
+   box-shadow: 0px 0px 8px rgba(0,0,0,0.3);
+}
+
+.left h1, .right h1 {
+   color: white;
+}
+
+header h1 {
+   display: inline-block;
+   margin: 0;
+}
+
+h1.main-title {
+   margin-right: 30px;
+   font-size: 3em;
+   padding-top: 20px;
+   color: white;
+}
+
+.container-fluid a, header h1, .main h1, .main h2 {
+   font-family: 'Montserrat', sans-serif;
+   color: #292929;
+   text-align: center;
+}
+
+.navbar,
+.main,
+.main-wrapper,
+.container-fluid {
+  position: relative; 
+  max-width: 1440px;
+}
+
+.navbar {
+   padding-top: 15px;
+   padding-bottom: 15px;
+   background: #fff;
+   height: 80px;
+   z-index: 150;
+   margin-bottom: -80px;
+   box-shadow: 0px 0px 8px rgba(0,0,0,0.3);
+}
+
+.container-fluid {
+   padding-left: 15px;
+   padding-right: 15px;
+   width: 100%;
+   max-width: 1440px;
+   height: 50px;
+   text-align: center;
+   border: 0;
+}
+
+.container-fluid a {
+   display: inline-block;
+   text-transform: uppercase;
+   font-size: .9em;
+   text-decoration: none;
+   margin: 16px 16px;
+}
+
+header,
+.navbar-scrolled {
+  position: fixed;
+  width: 100%;
+  max-width: 1440px;
+  top: 0;
+}
+
+.main {
+  background: #F0F0F0;
+  padding: 110px 50px 50px;
+}
+
+.main p {
+   text-align: center;
+   font-size: 1.5em;
+   font-family: 'Slabo 27px', serif;
+   color: #292929;
+}
+
+.main h1 {
+   font-size: 2em;
+   text-transform: uppercase;
+}
+
+hr {
+   color: #292929;
+}
