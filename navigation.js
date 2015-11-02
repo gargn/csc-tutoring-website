@@ -1,3 +1,11 @@
+/* Loads main content to new_view. */
+function loadMainContent(new_view) {
+   var current_view = $("#main-content").attr("class");
+   $("#main-content").removeClass(current_view);
+   $("#main-content").addClass(new_view);
+   $("#main-content").load(new_view + ".html");
+}
+
 /* Makes sticky navigation bar. */
 $(function(){
    var navOffset = $(".navbar").offset().top;
@@ -31,15 +39,19 @@ $(function(){
    $(".contact_us").load("contact_us.html");
 });
 
-/* Changes view based on navigation bar value. */
+/* Changes main content at navigation. */
 $(function(){
-   $(".navbar a").click(function(){
-      var current_view = $("#main-content").attr("class");
-      var new_view = $(this).attr("href").substring(1);
+   /* Sets value on load. */
+   $(window).load(function() {
+      var new_view = window.location.hash.substring(1);
+      console.log(new_view);
+      loadMainContent(new_view);
+   });
 
-      $("#main-content").removeClass(current_view);
-      $("#main-content").addClass(new_view);
-      $("#main-content").load(new_view + ".html");
+   /* Sets value on selection of navigation bar. */
+   $(".navbar a").click(function() {
+      var new_view = $(this).attr("href").substring(1);
+      loadMainContent(new_view); 
    });
 });
 
