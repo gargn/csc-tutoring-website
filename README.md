@@ -5,13 +5,14 @@ Website for Cal Poly Computer Science Tutoring Center.
 
 Collaborators
 
-   Nupur Garg
-   Kendall Gassner
-   Dylan Howell
-   Jasper Kahn
+      Nupur Garg
+      Kendall Gassner
+      Dylan Howell
+      Jasper Kahn
 
 
 Set Up Instructions
+
    Running the local webserver:
 
          sudo apachectl start          Starts apache web server
@@ -30,5 +31,5 @@ Set Up Instructions
 
 Coding Practices
 
-   80 characters word wrap (for vim users use gq to wrap)
+      80 characters word wrap (for vim users use gq to wrap)
 
