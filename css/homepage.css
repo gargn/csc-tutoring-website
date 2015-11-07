@@ -141,3 +141,15 @@ header,
 hr {
    color: #292929;
 }
+
+#tutors-image {
+   height: 200px;
+}
+
+/* TODO: Vertical align image. */
+#tutors-upleft {
+   width: 220px;
+   height: 220px;
+   float: left;
+}
+
