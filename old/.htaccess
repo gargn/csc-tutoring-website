@@ -1,0 +1,7 @@
+RewriteEngine on
+RewriteRule ^(.*\.pdf)$ $1 [L]
+RewriteRule ^([a-zA-Z0-9_]+)(/[a-zA-Z0-9_/]+)?$ /$1\.php$2 [L]
+#RewriteRule ^([a-zA-Z0-9_]+)?$ /$1\.php [L]
+#RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteCond %{REQUEST_FILENAME}\.php -f
+#RewriteRule ^([^/]+)/$ $1.php
